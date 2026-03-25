@@ -16,12 +16,12 @@ class _PostJobSuccessState extends State<ApplyJobSuccess> {
     super.initState();
     // Add timer for navigation
     Timer(const Duration(seconds: 4), () {
-      Navigator.of(context).pushReplacement(
-        MaterialPageRoute(
-          builder: (BuildContext context) => const JobDetails(job: {},), // Your target screen
-        ),
-      );
-    });
+        Navigator.of(context).pushReplacement(
+          MaterialPageRoute(
+          builder: (BuildContext context) => JobDetails(job: const {}), // Your target screen
+          ),
+        );
+      });
   }
 
   @override

@@ -228,7 +228,7 @@ class Chatpage extends StatelessWidget {
       ),
       bottomNavigationBar: Container(
         decoration: BoxDecoration(
-          border: Border(top: BorderSide(color: Colors.grey.withOpacity(0.25))),
+          border: Border(top: BorderSide(color: Colors.grey.withValues(alpha: 0.25))),
           color: Colors.white,
         ),
         height: screenHeight * 0.08, // Responsive height for bottom nav
@@ -330,7 +330,7 @@ class _ChatItem extends StatelessWidget {
           borderRadius: BorderRadius.circular(10),
           boxShadow: [
             BoxShadow(
-              color: Colors.grey.withOpacity(0.2),
+              color: Colors.grey.withValues(alpha: 0.2),
               spreadRadius: 1,
               blurRadius: 5,
               offset: const Offset(0, 2),

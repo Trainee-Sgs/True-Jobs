@@ -217,7 +217,7 @@ class _SettingPageState extends State<SettingPage> {
             Container(
               decoration: BoxDecoration(
                 border: Border(
-                  top: BorderSide(color: Colors.grey.withOpacity(0.25)),
+                  top: BorderSide(color: Colors.grey.withValues(alpha: 0.25)),
                 ),
                 color: Colors.white,
               ),
@@ -394,7 +394,11 @@ class _SettingPageState extends State<SettingPage> {
                         Expanded(
                           child: ElevatedButton(
                             onPressed: () {
-                              // TODO: Implement actual account deletion logic here
+                              ScaffoldMessenger.of(context).showSnackBar(
+                                const SnackBar(
+                                  content: Text('Account deletion is not available yet.'),
+                                ),
+                              );
                               Navigator.of(context).pop();
                             },
                             style: ElevatedButton.styleFrom(
@@ -499,7 +503,11 @@ class _SettingPageState extends State<SettingPage> {
                         Expanded(
                           child: ElevatedButton(
                             onPressed: () {
-                              // TODO: Implement actual logout logic here
+                              ScaffoldMessenger.of(context).showSnackBar(
+                                const SnackBar(
+                                  content: Text('Logout is not available yet.'),
+                                ),
+                              );
                               Navigator.of(context).pop();
                             },
                             style: ElevatedButton.styleFrom(

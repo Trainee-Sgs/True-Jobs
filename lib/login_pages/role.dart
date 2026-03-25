@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:true_jobs/JOB_RECRUITER/RECRUITER_Profile_creation/recruiter_profile1.dart';
+import 'package:true_jobs/Recutier_Module/Screens/Recutier_Profile_creation/recruiter_profile1.dart';
 import 'package:true_jobs/JOB_SEEKER/profile_creation/profile1.dart';
 
 class Role extends StatefulWidget {
@@ -76,7 +76,7 @@ class _RoleState extends State<Role> {
                                   border: Border.all(
                                     color: selected
                                         ? purpleColor
-                                        : purpleColor.withOpacity(0.5),
+                                        : purpleColor.withValues(alpha: 0.5),
                                     width: selected ? 2 : 1.5,
                                   ),
                                   color: selected

@@ -251,9 +251,22 @@ class _FilterBottomSheetState extends State<FilterBottomSheet> {
         return Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            _radio("Fixed salary"),
-            _radio("Fixed + incentive"),
-            _radio("Incentive only"),
+            _radio(
+              "Fixed salary",
+              selected: selectedSalaryType == "Fixed salary",
+              onTap: () => setState(() => selectedSalaryType = "Fixed salary"),
+            ),
+            _radio(
+              "Fixed + incentive",
+              selected: selectedSalaryType == "Fixed + incentive",
+              onTap: () =>
+                  setState(() => selectedSalaryType = "Fixed + incentive"),
+            ),
+            _radio(
+              "Incentive only",
+              selected: selectedSalaryType == "Incentive only",
+              onTap: () => setState(() => selectedSalaryType = "Incentive only"),
+            ),
             const SizedBox(height: 16),
             const Text("Pay per"),
             Wrap(
@@ -369,15 +382,18 @@ class _FilterBottomSheetState extends State<FilterBottomSheet> {
     );
   }
 
-  Widget _radio(String title) {
-    return RadioListTile<String>(
-      value: title,
-      groupValue: selectedSalaryType,
-      onChanged: (val) {
-        setState(() {
-          selectedSalaryType = val;
-        });
-      },
+  Widget _radio(
+    String title, {
+    required bool selected,
+    required VoidCallback onTap,
+  }) {
+    return ListTile(
+      contentPadding: EdgeInsets.zero,
+      onTap: onTap,
+      leading: Icon(
+        selected ? Icons.radio_button_checked : Icons.radio_button_off,
+        color: selected ? const Color(0xFF7C329B) : const Color(0xFF8C8C8C),
+      ),
       title: Text(title),
     );
   }
@@ -417,8 +433,8 @@ class _FilterBottomSheetState extends State<FilterBottomSheet> {
   }
 }
 
-class nish extends StatelessWidget {
-  const nish({super.key});
+class Nish extends StatelessWidget {
+  const Nish({super.key});
 
   @override
   Widget build(BuildContext context) {

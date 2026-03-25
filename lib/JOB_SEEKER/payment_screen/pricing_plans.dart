@@ -241,7 +241,7 @@ class PricingPlansScreen extends StatelessWidget {
         borderRadius: BorderRadius.circular(isSmallScreen ? 12 : 16),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.08),
+            color: Colors.black.withValues(alpha: 0.08),
             blurRadius: 8,
             offset: const Offset(0, 2),
           ),
@@ -265,7 +265,7 @@ class PricingPlansScreen extends StatelessWidget {
               subtitle,
               style: TextStyle(
                 fontSize: isSmallScreen ? 12 : (isMediumScreen ? 13 : 14),
-                color: titleColor.withOpacity(0.8),
+                color: titleColor.withValues(alpha: 0.8),
               ),
             ),
           ],
@@ -290,7 +290,7 @@ class PricingPlansScreen extends StatelessWidget {
                   priceSubtext,
                   style: TextStyle(
                     fontSize: isSmallScreen ? 12 : (isMediumScreen ? 13 : 14),
-                    color: titleColor.withOpacity(0.7),
+                    color: titleColor.withValues(alpha: 0.7),
                   ),
                 ),
               ),
@@ -319,7 +319,7 @@ class PricingPlansScreen extends StatelessWidget {
                         fontSize: isSmallScreen
                             ? 13
                             : (isMediumScreen ? 14 : 15),
-                        color: titleColor.withOpacity(
+                        color: titleColor.withValues(alpha: 
                           feature.isIncluded ? 1.0 : 0.6,
                         ),
                         decoration: feature.isIncluded

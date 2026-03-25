@@ -342,7 +342,7 @@ class _ApplyJob1State extends State<ApplyJob1> {
                                                     ),
                                                     decoration: BoxDecoration(
                                                       color: Colors.white
-                                                          .withOpacity(0.8),
+                                                          .withValues(alpha: 0.8),
                                                       borderRadius:
                                                           BorderRadius.circular(
                                                               4),
