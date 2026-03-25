@@ -1,3 +1,5 @@
+// ignore_for_file: file_names
+
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:true_jobs/JOB_SEEKER/profile_creation/Qualification/qualification.dart';
@@ -309,7 +311,7 @@ class _PreviousJobState extends State<PreviousJob> {
                                   selectedWorkMode = mode;
                                 });
                               },
-                              selectedColor: primaryColor.withOpacity(0.2),
+                              selectedColor: primaryColor.withValues(alpha: 0.2),
                               labelStyle: GoogleFonts.poppins(
                                 color: isSelected ? primaryColor : Colors.black,
                               ),
@@ -340,7 +342,7 @@ class _PreviousJobState extends State<PreviousJob> {
                               selectedJobType = type;
                             });
                           },
-                          selectedColor: primaryColor.withOpacity(0.2),
+                          selectedColor: primaryColor.withValues(alpha: 0.2),
                           labelStyle: GoogleFonts.poppins(
                             color: isSelected ? primaryColor : Colors.black,
                           ),

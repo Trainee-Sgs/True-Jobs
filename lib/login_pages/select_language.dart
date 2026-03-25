@@ -167,7 +167,7 @@ class _SelectLanguageState extends State<SelectLanguage> {
         height: size, // Use dynamic size
         decoration: BoxDecoration(
           border: Border.all(
-            color: selected ? purpleColor : purpleColor.withOpacity(0.5),
+            color: selected ? purpleColor : purpleColor.withValues(alpha: 0.5),
             width: selected ? 2 : 1.5,
           ),
           color: selected ? purpleColor : Colors.transparent,

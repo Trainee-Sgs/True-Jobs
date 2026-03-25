@@ -7,10 +7,10 @@ class Profil1 extends StatefulWidget {
   const Profil1({super.key});
 
   @override
-  _Profil1State createState() => _Profil1State();
+  Profil1State createState() => Profil1State();
 }
 
-class _Profil1State extends State<Profil1> {
+class Profil1State extends State<Profil1> {
   final purpleColor = const Color(0xFF7C329B);
 
   String gender = 'Male';

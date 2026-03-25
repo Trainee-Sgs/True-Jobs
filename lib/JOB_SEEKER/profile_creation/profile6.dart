@@ -304,7 +304,7 @@ class _Profile6State extends State<Profile6> {
                         height: buttonHeight,
                         child: ElevatedButton(
                           style: ElevatedButton.styleFrom(
-                            backgroundColor: purpleColor.withOpacity(0.5),
+                            backgroundColor: purpleColor.withValues(alpha: 0.5),
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(8),
                             ),
