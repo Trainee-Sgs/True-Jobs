@@ -131,7 +131,7 @@ class NotificationScreen extends StatelessWidget {
       ),
       bottomNavigationBar: Container(
         decoration: BoxDecoration(
-          border: Border(top: BorderSide(color: Colors.grey.withOpacity(0.25))),
+          border: Border(top: BorderSide(color: Colors.grey.withValues(alpha: 0.25))),
           color: Colors.white,
         ),
         height: screenHeight * 0.08, // Responsive height for bottom nav

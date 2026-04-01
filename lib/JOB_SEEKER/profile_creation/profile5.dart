@@ -229,15 +229,16 @@ class _Profile5State extends State<Profile5> {
                           proficiencyLevels.length,
                           (i) => Row(
                             children: [
-                              Radio<int>(
-                                value: i,
-                                groupValue: selectedProficiency,
-                                activeColor: purpleColor,
-                                onChanged: (val) => setState(
-                                  () => selectedProficiency = val ?? 0,
+                              GestureDetector(
+                                onTap: () =>
+                                    setState(() => selectedProficiency = i),
+                                child: Icon(
+                                  selectedProficiency == i
+                                      ? Icons.radio_button_checked
+                                      : Icons.radio_button_off,
+                                  color: purpleColor,
+                                  size: iconSize * 0.9,
                                 ),
-                                materialTapTargetSize: MaterialTapTargetSize
-                                    .shrinkWrap, // Reduce radio button size
                               ),
                               Text(
                                 proficiencyLevels[i],

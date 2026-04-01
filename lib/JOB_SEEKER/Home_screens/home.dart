@@ -420,7 +420,7 @@ class _HomeState extends State<Home> {
       ),
       bottomNavigationBar: Container(
         decoration: BoxDecoration(
-          border: Border(top: BorderSide(color: Colors.grey.withOpacity(0.25))),
+          border: Border(top: BorderSide(color: Colors.grey.withValues(alpha: 0.25))),
           color: Colors.white,
         ),
         height: bottomNavHeight,

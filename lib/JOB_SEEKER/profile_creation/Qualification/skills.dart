@@ -148,7 +148,7 @@ class _SkillsState extends State<Skills> {
                       runSpacing: 8,
                       children: selectedSkills.map((skill) {
                         return Chip(
-                          backgroundColor: const Color(0xFFBFA3F9).withOpacity(0.7),
+                          backgroundColor: const Color(0xFFBFA3F9).withValues(alpha: 0.7),
                           label: Text(
                             skill,
                             style: GoogleFonts.poppins(

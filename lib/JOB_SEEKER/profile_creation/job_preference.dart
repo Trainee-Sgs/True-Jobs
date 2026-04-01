@@ -609,27 +609,37 @@ class _JobPreferenceState extends State<JobPreference> {
                   const SizedBox(height: 12),
                   Column(
                     children: [
-                      RadioListTile(
-                        value: "Anywhere in India",
-                        groupValue: tempRelocate,
-                        onChanged: (val) {
+                      ListTile(
+                        contentPadding: EdgeInsets.zero,
+                        onTap: () {
                           setModalState(() {
-                            tempRelocate = val!;
+                            tempRelocate = "Anywhere in India";
                           });
                         },
+                        leading: Icon(
+                          tempRelocate == "Anywhere in India"
+                              ? Icons.radio_button_checked
+                              : Icons.radio_button_off,
+                          color: const Color(0xFF7C329B),
+                        ),
                         title: Text(
                           "Anywhere in India",
                           style: GoogleFonts.poppins(),
                         ),
                       ),
-                      RadioListTile(
-                        value: "No, prefer to stay local",
-                        groupValue: tempRelocate,
-                        onChanged: (val) {
+                      ListTile(
+                        contentPadding: EdgeInsets.zero,
+                        onTap: () {
                           setModalState(() {
-                            tempRelocate = val!;
+                            tempRelocate = "No, prefer to stay local";
                           });
                         },
+                        leading: Icon(
+                          tempRelocate == "No, prefer to stay local"
+                              ? Icons.radio_button_checked
+                              : Icons.radio_button_off,
+                          color: const Color(0xFF7C329B),
+                        ),
                         title: Text(
                           "No, prefer to stay local",
                           style: GoogleFonts.poppins(),

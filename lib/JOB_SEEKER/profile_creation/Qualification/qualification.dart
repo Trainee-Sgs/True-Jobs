@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:true_jobs/JOB_SEEKER/profile_creation/Qualification/Previous_job.dart';
+import 'package:true_jobs/JOB_SEEKER/profile_creation/Qualification/previous_job.dart';
 import 'package:true_jobs/JOB_SEEKER/profile_creation/Qualification/education.dart';
 import 'package:true_jobs/JOB_SEEKER/profile_creation/Qualification/language_proficiency.dart';
 import 'package:true_jobs/JOB_SEEKER/profile_creation/Qualification/skills.dart';

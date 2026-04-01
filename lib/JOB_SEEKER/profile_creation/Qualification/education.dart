@@ -377,7 +377,7 @@ class _EducationState extends State<Education> {
                             selected: isSelected,
                             selectedColor: const Color(
                               0xFF7C329B,
-                            ).withOpacity(0.15),
+                            ).withValues(alpha: 0.15),
                             backgroundColor: Colors.grey[200],
                             labelStyle: TextStyle(
                               color: isSelected

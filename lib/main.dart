@@ -17,11 +17,8 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return WillPopScope(
-      onWillPop: () async {
-        // Disable back navigation globally
-        return false;
-      },
+    return PopScope(
+      canPop: false,
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'True Jobs App',
@@ -37,4 +34,3 @@ class MyApp extends StatelessWidget {
   }
 }
 
-//create the develop brnch
